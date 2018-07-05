@@ -7,7 +7,7 @@ public class Heap {
 	private ArrayList<Integer> data = new ArrayList<>();
 
 	public int size() {
-		return data.size() - 1;
+		return data.size();
 	}
 
 	public void insert(int item) {
