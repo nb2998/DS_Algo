@@ -61,7 +61,6 @@ struct Node* newNode(int data)
 
 int main() 
 { 
-	// create tree 
 	struct Node* root = newNode(1); 
 	root->left = newNode(2); 
 	root->right = newNode(3); 
