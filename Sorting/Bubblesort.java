@@ -1,19 +1,32 @@
-public class Bubblesort {
-    private void swap(int[] arr, int a){
-        int temp = arr[a];
-        arr[a] = arr[a+1];
-        arr[a+1] = temp;
-    }
+import java.util.Arrays;
 
-    private int[] sorting(int[] arr, max) {
-        boolean flag = False;
-        for (int i = 0; i < arr.length - 1; i++) {
-            if (arr[i] > arr[i + 1]) {
-                flag = True;
-                swap(arr, i)
+public class BubbleSort {
+	
+	public static void main(String[] args) {
+		int[] arr = {1, 4, 2, 3, 6, 5};
+		bubbleSort(arr);
+		System.out.println(Arrays.toString(arr));
+	}
+
+	public static void bubbleSort(int[] arr) {
+        boolean swap = true;
+        int i = 0;
+
+        while(swap && i < arr.length){
+            swap = false;
+            for(int j=i; j<arr.length-1; j++){
+                if(arr[j] > arr[j+1]){
+                    swap = swap(arr, j, j+1);
+                }
             }
+            i++;
         }
-        if (flag == True) sorting(arr, max - 1);
-        return arr;
-        }
-    }
+	}
+
+	public static boolean swap(int[] arr, int index1, int index2) {
+		int temp = arr[index1];
+		arr[index1] = arr[index2];
+        arr[index2] = temp;
+        return true;
+	}
+}
