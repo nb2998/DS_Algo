@@ -45,6 +45,17 @@ void delete_position(int pos)
     }
     previous->next=current->next;
 }
+//delete element from tail 
+void deleteAtTail(){
+    Node*temp = head;
+    Node*prev = head;
+    while(temp->next!= NULL){
+        prev = temp;
+        temp = temp->next;
+    }
+    prev->next= NULL;
+    delete temp;
+}
 
 
 //printing all the values of the linked list
@@ -68,9 +79,13 @@ int main()
    insert(13);
    insert(47);
    insert(54);
+   //more inputs so that we can try delete at tail 
+    insert(100);
+    insert(200);
    
    delete_first();
    delete_position(3);
+   deleteAtTail(); // called deleleAtTail() to test the edit part.
    
    cout<<"The linked list is: ";
    display(); 
