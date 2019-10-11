@@ -11,6 +11,7 @@ class LinkList {
         this.size = 0;
     }
 
+    // This method appends given node to linklist
     add(val) {
         const newNode = new Node(val);
         let current;
@@ -28,7 +29,7 @@ class LinkList {
         this.size++;
     }
 
-
+    // This method displays linklist nodes separated by arrows
     print() {
         let current;
         let linkliststr = '';
@@ -44,6 +45,9 @@ class LinkList {
         console.log(linkliststr + 'null');
     }
 
+    // This method helps to insert a node at specified position in linklist
+    // element -> argument that represents value of node
+    // pos -> argument that represents index at which node is to be inserted
     insertAt(element, pos) {
         let nodeToInsert = new Node(element);
         let count = 0;
@@ -72,6 +76,8 @@ class LinkList {
         }
     }
 
+    // This method removes given node from mentioned position in linklist
+    // pos -> index of node which is to be removed.
     remove(pos) {
         let curr = this.head;
         let prev;
@@ -96,14 +102,17 @@ class LinkList {
         this.size--;
     }
 
+    // returns size of linklist
     sizeOfList() {
         return this.size;
     }
 
+    // checks if given linklist is empty or not
     isEmpty() {
         return this.head;
     }
 
+    // returns index of a given node in linklist
     indexOf(element) {
         let count = 0;
         let current = this.head;
