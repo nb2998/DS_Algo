@@ -33,19 +33,20 @@ def binary_search(a, x):
             r = mid-1
             #return binary_search(a[: mid], x)
     return idx
-    
+
 
 
 def main():
-    n_array = [int(i) for i in  input().split(" ")]
-    k_elements = [int(i) for i in  input().split(" ")]
+    n_array = [int(i) for i in  input().strip().split(" ")]
+    k_elements = [int(i) for i in  input().strip().split(" ")]
     n = n_array[0]
     array = n_array[1:]
     k = (k_elements[0])
     elements = k_elements[1:]
     for i in range(k):
-        print(binary_search(array, elements[i]), end = ' ')
+        bs = binary_search(array, elements[i])
+        print( bs , end=" ")
     print()
 
 
-main()
+main() 
