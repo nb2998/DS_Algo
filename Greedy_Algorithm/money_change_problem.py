@@ -12,7 +12,10 @@
 
 # Example :
 # 24          <--- input
-# 6           <--- output
+# 6         <--- output
+
+# 26        <-- input
+#4          <-- output
 
 def get_change(m):
     
