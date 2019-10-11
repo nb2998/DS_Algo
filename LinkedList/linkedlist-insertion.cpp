@@ -39,7 +39,17 @@ void insert_atposition(int pos, int value)
     pre->next=temp;	
     temp->next=cur;
 }
-
+// insert at tail 
+void insertAtTail(int data){
+    Node*temp = head;
+    while(temp->next!= NULL){
+        temp = temp->next;
+    }
+    Node*n = new Node();
+    temp ->next = n;
+    n->data = data;
+    n->next = NULL;
+}
 
 //printing all the values of the linked list
 void display() 
@@ -63,6 +73,9 @@ int main()
    insert(47);
    insert(54);
    insert_atposition(2, 100);
+   // trying insertAtTail method which is recently added
+   insertAtTail(200);
+   insertAtTail(300);
    
    cout<<"The linked list is: ";
    display(); 
