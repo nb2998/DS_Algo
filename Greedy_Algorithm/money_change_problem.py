@@ -10,6 +10,9 @@
 
 # Output Format. Output the minimum number of coins with denominations 1, 5, 10 that changes m.
 
+# Example :
+# 24          <--- input
+# 6           <--- output
 
 def get_change(m):
     
