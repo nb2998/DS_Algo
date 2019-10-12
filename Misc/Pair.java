@@ -1,8 +1,4 @@
-package codeforces;
-
-
-
-static class IntIntPair implements Comparable<IntIntPair> {
+class IntIntPair implements Comparable<IntIntPair> {
 	public final int first;
 	public final int second;
 
@@ -44,6 +40,11 @@ static class IntIntPair implements Comparable<IntIntPair> {
 			return value;
 		}
 		return Integer.compare(second, o.second);
+	}
+	
+	public static void main(String args[]) {
+		IntIntPair p = new IntIntPair(4, 5);
+		System.out.println(p);
 	}
 
 }
