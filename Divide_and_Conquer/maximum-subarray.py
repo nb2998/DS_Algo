@@ -56,7 +56,7 @@ def find_max_subarray(a, low, high):
             return (cross_low, cross_high, cross_sum)
 
 def main():
-    array = [ int(i) for i in input().split(" ")]
+    array = [ int(i) for i in input().strip().split(" ")]
     low, high, s = find_max_subarray( array, 0, len(array)-1)
     print(low, high, s)
 
