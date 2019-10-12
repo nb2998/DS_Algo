@@ -20,14 +20,13 @@ def linear_search(array, key):
 def main():
     Array = [ int(i) for i in input("Enter the elements in array : ").strip().split(" ")]
     key = int(input("Enter the value of Key :"))
-    print(f"------ Using Linear Search to Find element {key} in array -------")
+    print("------ Using Linear Search to Find element {} in array -------".format(key))
     result, total_time_linear = linear_search(Array, key)
     if result:
         print("Key found in the array !")
     else:
         print("Key doesn't exists !")
-    print(f"Total time taken by program is {total_time_linear}")
+    print("Total time taken by program is {}".format(total_time_linear))
 
 ###-------------- Calling driver function ------------------###
 main()
-
