@@ -1,9 +1,4 @@
 
-
-/**
- * @author johnny16
- *
- */
 public class UnionFind {
 
 	private int count; // num of components
