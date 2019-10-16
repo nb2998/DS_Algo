@@ -46,6 +46,7 @@ public class Heap {
 		int lci = 2 * pi + 1;
 		int rci = 2 * pi + 2;
 		int mini = pi;
+		
 		if (lci < data.size() && data.get(lci) < data.get(mini))
 			mini = lci;
 		if (rci < data.size() && data.get(rci) < data.get(mini))
