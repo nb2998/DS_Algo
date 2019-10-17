@@ -1,7 +1,7 @@
 # DS_Algo
 <h2> Make your first open source contribution! :sparkles: </h2>
 
-<h3>Some guidelines</h3>
+<h3>Important guidelines</h3>
 
 - The repository consists of a variety of data structures and algorithms. 
 - Feel free to add new ones if they don't exist already in a language. 
