@@ -19,5 +19,3 @@
 - Commit the changes using `git commit -m "Added xyz algo"`
 - Push the changes using `git push origin master`
 - Make a pull request to the master branch
-
-Hack on! God Speed
