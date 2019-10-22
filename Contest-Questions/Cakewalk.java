@@ -5,9 +5,8 @@ import java.util.Scanner;
 //The first cheat code multiplies the amount of money you own by 10, while the second one multiplies it by 20. 
 //The cheat codes can be used any number of times.You want to have exactly N dollars.
 //Now you are wondering: can you achieve that by only using some sequence of cheat codes?
-public class cakewalk {
-	public static void main (String[] args) throws java.lang.Exception
-	{
+public class Cakewalk {
+	public static void main (String[] args) throws java.lang.Exception {
 		// your code goes here
 		Scanner sc = new Scanner(System.in);
 		int t = sc.nextInt();
