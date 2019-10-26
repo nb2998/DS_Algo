@@ -1,9 +1,3 @@
-INVCNT - Inversion Count(SPOJ)
-#graph-theory #number-theory #shortest-path #sorting #bitmasks
-
-
-CODE:
-
 #include<bits/stdc++.h>
 using namespace std;
 #define ld long long 
