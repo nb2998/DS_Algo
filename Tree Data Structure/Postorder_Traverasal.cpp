@@ -1,19 +1,20 @@
-/**
- * Definition for binary tree
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- * };
- */
- 
- 
-vector<int> Solution::postorderTraversal(TreeNode* A) {
-    if(A==NULL) return vector<int>();
+#include <bits/stdc++.h>
+using namespace std;
+
+struct Node {
+     int val;
+     Node *left;
+     Node *right;
+     Node(int x) : val(x), left(NULL), right(NULL) {}
+ };
+
+
+void postorderTraversal(Node* A) {
+    
+   if(A==NULL) return;
     vector<int> res;
-    TreeNode* curr = A ;
-    stack<TreeNode* > s;
+    Node* curr = A ;
+    stack<Node* > s;
     s.push(curr);
     
     while(!s.empty())
@@ -27,5 +28,22 @@ vector<int> Solution::postorderTraversal(TreeNode* A) {
         
     }
     reverse(res.begin(),res.end());
-    return res;
+    
+   for(auto i:res){
+       cout << i << " ";
+   }
+    cout << endl;
 }
+int main() 
+{ 
+    struct Node *root = new Node(1); 
+    root->left             = new Node(2); 
+    root->right         = new Node(3); 
+    root->left->left     = new Node(4); 
+    root->left->right = new Node(5);  
+  
+    cout << "\nPostorder traversal of binary tree is \n"; 
+    postorderTraversal(root);  
+  
+    return 0; 
+} 
