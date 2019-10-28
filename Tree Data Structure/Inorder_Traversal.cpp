@@ -1,18 +1,19 @@
-/**
- * Definition for binary tree
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- * };
- */
+#include <bits/stdc++.h>
+using namespace std;
 
-vector<int> Solution::inorderTraversal(TreeNode* A) {
+struct Node {
+     int val;
+     Node *left;
+     Node *right;
+     Node(int x) : val(x), left(NULL), right(NULL) {}
+ };
+
+
+void inorderTraversal(Node* A) {
     
     vector<int> res;
-    stack<TreeNode* > s;
-    TreeNode* curr = A;
+    stack<Node* > s;
+    Node* curr = A;
     
     while(curr!=NULL || !s.empty())
     {
@@ -27,7 +28,22 @@ vector<int> Solution::inorderTraversal(TreeNode* A) {
         
         curr = curr->right;
     }
-    return res;
-   
+    
+   for(auto i:res){
+       cout << i << " ";
+   }
+    cout << endl;
 }
-
+int main() 
+{ 
+    struct Node *root = new Node(1); 
+    root->left             = new Node(2); 
+    root->right         = new Node(3); 
+    root->left->left     = new Node(4); 
+    root->left->right = new Node(5);  
+  
+    cout << "\nInorder traversal of binary tree is \n"; 
+    inorderTraversal(root);  
+  
+    return 0; 
+} 
