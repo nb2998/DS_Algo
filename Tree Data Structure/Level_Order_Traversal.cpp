@@ -1,8 +1,8 @@
-/* C++ program to print level order traversal using STL */
+
 #include <bits/stdc++.h> 
 using namespace std; 
 
-// A Binary Tree Node 
+
 struct Node 
 { 
 	int data; 
@@ -47,10 +47,9 @@ Node* newNode(int data)
 	return temp; 
 } 
 
-// Driver program to test above functions 
+
 int main() 
 { 
-	// Let us create binary tree shown in above diagram 
 	Node *root = newNode(1); 
 	root->left = newNode(2); 
 	root->right = newNode(3); 
