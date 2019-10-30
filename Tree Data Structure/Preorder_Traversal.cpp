@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+//Definition of node
 struct Node {
      int val;
      Node *left;
