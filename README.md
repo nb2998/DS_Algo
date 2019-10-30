@@ -8,6 +8,7 @@
 - If the same code exists in another language, add the code in your preferred language to the same package/folder.
 - It is a good practise to work on branches. It will enable you to make multiple pull requests without waiting for one to get merged.
 - Please use camel case (thisIsCamelCase) to name files and variables.
+- Avoid submitting multiple algorithms in a single pull request.
 
 
 <h3>How to begin?</h3>
