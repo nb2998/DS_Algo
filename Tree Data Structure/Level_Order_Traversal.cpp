@@ -23,7 +23,7 @@ void printLevelOrder(Node *root)
 
 	while (q.empty() == false) 
 	{ 
-		// Print front of queue and remove it from queue 
+		// Print  
 		Node *node = q.front(); 
 		cout << node->data << " "; 
 		q.pop(); 
