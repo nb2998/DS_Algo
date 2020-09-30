@@ -4,27 +4,27 @@ public class CocktailSort
     public static void cocktailSort(Integer[] inputArrays,
                                     Integer n)
     {
-        boolean swapped = true;
+        Boolean swapped = Boolean.TRUE;
         Integer start = 0;
         Integer end = inputArrays.length;
 
-        while (swapped == true) {
-            swapped = false;
+        while (swapped) {
+            swapped = Boolean.FALSE;
 
             for (int i = start; i < end - 1; ++i) {
                 if (inputArrays[i] > inputArrays[i + 1]) {
                     int temp = inputArrays[i];
                     inputArrays[i] = inputArrays[i + 1];
                     inputArrays[i + 1] = temp;
-                    swapped = true;
+                    swapped = Boolean.TRUE;
                 }
             }
 
-            if (swapped == false) {
+            if (!swapped) {
                 break;
             }
 
-            swapped = false;
+            swapped = Boolean.FALSE;
             end--;
 
             for (int i = end - 1; i >= start; i--) {
@@ -32,7 +32,7 @@ public class CocktailSort
                     int temp = inputArrays[i];
                     inputArrays[i] = inputArrays[i + 1];
                     inputArrays[i + 1] = temp;
-                    swapped = true;
+                    swapped = Boolean.TRUE;
                 }
             }
 
