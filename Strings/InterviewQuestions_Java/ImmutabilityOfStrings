@@ -14,4 +14,4 @@ Let’s look at some of the benefits of String immutability, that will help in u
 
 5. Since String is immutable, its hashcode is cached at the time of creation and it doesn’t need to be calculated again. This makes it a great candidate for the key in a Map and its processing is faster than other HashMap key objects. This is why String is the most widely used as HashMap keys.
 
-            Above are some of the reasons I could think of that shows benefits of String immutability
+            Above are some of the reasons I could think of that shows benefits of String immutability.
