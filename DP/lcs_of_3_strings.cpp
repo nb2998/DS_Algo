@@ -16,10 +16,10 @@ signed main()
  
     ios_base::sync_with_stdio(false); cin.tie(NULL);
  
-    #ifndef ONLINE_JUDGE
-    freopen("input.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
-    #endif
+    // #ifndef ONLINE_JUDGE
+    // freopen("input.txt", "r", stdin);
+    // freopen("output.txt", "w", stdout);
+    // #endif
  
     string s1,s2,s3;
     cin>>s1>>s2>>s3;  // take input of three strings
