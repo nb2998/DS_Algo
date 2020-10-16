@@ -16,3 +16,5 @@
 - Add the changes using `git add .`
 - Commit the changes using `git commit -m "Added xyz algo"`
 - Push the changes using `git push origin master`
+
+#hacktoberfest-accepted
