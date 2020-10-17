@@ -15,8 +15,10 @@
 
 - Fork the repository
 - Clone your local repository 
+- Create a new branch to work on
 - Make changes in your local system
 - Add the changes using `git add .`
 - Commit the changes using `git commit -m "Added xyz algo"`
+- Take a pull to get the latest commits
 - Push the changes using `git push origin master`
 - Make a pull request to the master branch
