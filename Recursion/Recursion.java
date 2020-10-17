@@ -11,7 +11,9 @@ public class Recursion {
 	
 	static int power(int x, int n) {
 		if(n==0) return 1;
-		return x*power(x, n-1);
+int ans=power(x,n/2);
+		ans*=ans;
+		return n%2==0?ans:ans*x;
 	}
 	
 	static int fact(int n) {
